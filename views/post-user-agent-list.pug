@@ -1,0 +1,34 @@
+style(type='text/css').
+  .code {
+    background: #f1f1f1;
+    font-size: 12px;
+    padding: 20px;
+    font-family: monospace;
+    letter-spacing: -1px;
+  }
+
+  .code p {
+    margin: 10px 5px;
+  }
+
+  form {
+    margin: 30px 5px;
+  }
+div upload you <b>user-agent.txt</b> file
+
+p ex:
+div(class='code')
+  p Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G36 Safari/601.1
+  p Mozilla/5.0 (Linux; Android 5.1.1; SM-T360 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Safari/537.36
+  p Mozilla/5.0 (Linux; U; Android 4.1.2; fi-fi; GT-I9100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  p Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143
+  p Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+
+form(action='/' method='POST' enctype='multipart/form-data')
+  label(for='ua') user againt list:
+  br
+  br
+  input(type='file', name='myfile', id='myfile')
+  br
+  br
+  button.btn.btn-primary(type='submit') Submit
